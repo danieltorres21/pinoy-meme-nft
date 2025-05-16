@@ -1,0 +1,247 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000;  /* Black background */
+  color: #fff;  /* White text for good contrast */
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styling */
+header {
+  background-color: #333;  /* Dark grey background */
+  color: #fff;  /* White text */
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  margin: 0 15px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #555;  /* Darker grey on hover */
+}
+
+/* Main content area */
+main {
+  flex-grow: 1;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #111;  /* Slightly lighter black for contrast */
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;  /* White text */
+}
+
+/* Contact & Portal Form Styling */
+form {
+  background-color: #222;  /* Very dark grey for forms */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #fff;  /* White label text */
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #444;  /* Dark grey borders */
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #fff;  /* White border on focus */
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  background-color: #333;  /* Dark grey background */
+  color: #fff;  /* White text */
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;  /* Darker grey on hover */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;  /* Dark grey footer */
+  color: #fff;  /* White text */
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2rem;
+  }
+
+  nav a {
+      padding: 10px;
+      font-size: 1rem;
+  }
+
+  form {
+      padding: 20px;
+      margin-top: 10px;
+  }
+
+  h2 {
+      font-size: 2rem;
+  }
+
+  button {
+      width: 100%;
+  }
+
+  footer {
+      font-size: 0.9rem;
+  }
+}
+
+/* Mission & Vision Section Styling */
+.mission-vision {
+  background-color: #111;  /* Slightly lighter black for contrast */
+  color: #fff;  /* White text */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.mission-vision h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.mission-vision-content {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  text-align: left;
+}
+
+.mission-vision .mission, 
+.mission-vision .vision {
+  width: 45%;
+  padding: 20px;
+}
+
+.mission-vision .mission h3, 
+.mission-vision .vision h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.mission-vision .mission p, 
+.mission-vision .vision p {
+  font-size: 1.1rem;
+}
+
+/* NFT Card Styling */
+.nft-card {
+  width: 300px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 15px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.05);
+  transition: transform 0.3s ease;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.nft-card:hover {
+  transform: translateY(-10px);
+}
+
+.nft-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Price text changed to black */
+.nft-card .price {
+  color: #000;  /* Black text */
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Button in NFT card */
+.buy-button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+  background-color: #ccc;
+}
